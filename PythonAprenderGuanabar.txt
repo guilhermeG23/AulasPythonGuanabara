@@ -1,0 +1,373 @@
+
+
+Guido van Hossuem: Contribuidor da linguagem ABC na década de 80
+
+Problemas na criação da linguagem do projeto ABC fez com que criasce uma linguagem para resolver o problemas de incompatibilidade da linguagem
+
+O fato do python ter uma cobra como mascote vem da editora de livros onralhy onde cada livro eles colocavam um animal na capa pra representar a linguagem, (Mesmo que o nome python tenha sido derivado de uma serial / montanha) a editora resolvel colocar a imagem de uma cobra para representalo
+
+Serpente Python(O criador aceito o mascote pela massiva aceitação do publico a imagem)
+
+primeira versões lançados na década de 90.
+
+Em 2001 foi criada a funcação "Python Software Fundation"(Organização sem fins lucrativos com objetivo de manter o software disponivel, online, cordenada, além que a probpria comunidade contribui para a linguagem na sua estrutrura, adicionando o que achar util no momento);
+
+Algumas das empresas apoiadoras(Microsoft, Globo.com, Google e entre outras);
+
+Se tornou popular a ponto de já vim pre instalada em varios sistemas(EX: Todas as distros linux, algumas distros BSD e Mac OS)
+
+-Caracteristicas:
+
+Linguagem de Proposito geral(Não tem area expecifica de aplicação, ele é um pouco de tudo);
+Linguagem Multiplataforma(Mesmo code utilizada em varios OS sem modificações)
+Batteries included (já possui varios menores intalados juntos para evitar instalações futuras)
+Linguagem Bem-Identada
+Linguagem Horientada a Objetos
+Muitas Bibliotecas para uso geral
+
+Areas principais
+Inteligencia artificial
+Software 3D
+BioTecnologia
+
+Quem Usa:
+ZOPE
+Ear Canada
+BitTorrent
+Globo
+Google
+Youtube
+Nasa
+Autodesk
+Blender
+GImp
+Rasperbery
+Arduino
+
+#A importancia de um interpretador(Tradutor)
+Ele vai traduzir seu codigo em linguagem de maquina e vai responder devolta
+Python => Binario = entrada
+Saida Humana <= Binario = Saida
+
+#Como mostras as mensagens de Tim Peterson no Python
+Execute o comando: import this na interface e ele vai mostrar as mensagens de Tim peterson na tela(Zen Off Python);
+
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+#Base teorica e primeiros comandos
+
+Dados que são mensagens em python possuem delimitadores 
+EX: Delimitadores '' ou ""
+print ('ola mundo') ou print ("ola mundo")
+Ambos Funcionam
+
+Todos os comandos em Python são funções
+
+'' = sempre de preferencia a aspas simples
+
+função para imprimir na tela: print('') ou print()
+O print('') ou ("") imprimi strings entre as aspas e chaves
+O print() imprimi valores que estam entre as chaves
+
+#Como imprimir com um print
+print(2+3) = Imprimi 5
+
+#Imprimir valores separados
+print ('2'+'3')
+Vai imprimir 23, não da erro so sepera os valores sem fazer a soma do valor real
+
+Pode usar a virgula ou o mais para juntar valores
+
+#IMprimir valores separados
+>>> print('2' + '2')
+22
+
+#IMprimir valores com espaço
+>>> print('2','2')
+2 2
+
+#Valores com strings
+>>> print("Print:",7 + 3)
+Print: 10
+
+#Toda a variavel é um objeto
+#Variaveis = Atibuem valores de chamadas, uma variavel guarda um valor com referencia na memoria que pode ser modificado a qualquer momento
+
+= Recebe
+== Igual
+
+Atribuindo valor a uma variavel
+idade = 25 
+
+Atribuindo valor e chamando variaveis
+>>> idade = 18
+>>> nome = 'guilherme'
+>>> altura = 1.95
+>>> print(idade,nome,altura)
+18 guilherme 1.95
+#Nestes casos tem que usar virgula e não mais
+
+#Entrada de valores, atribuindo valores a variaveis com entradas de usuarios
+
+valor = input()
+>>> valor = input("Nome: ")
+Nome: guilherme
+>>> print(valor)
+guilherme
+
+Até agora trabalhamos somente com o IDE executavel, mas nãpo criamos nenhum arquivo de programa python
+
+Vamos criar um arquivo, se voce abrir no menu do DIE vai ter a opção para criar um arquivo, crie o exemplo:
+
+nome = input("Nome: ")
+idade = input("Sua Idade: ")
+
+print("Meu nome é",nome,"e tenho",idade,"anos")
+
+Depois de você salvar o arquivo ele terá a extensão .py
+
+Para executar o script PY, você vai no arquivo, no menu dele tem a opção RUN , abre ele e tem o Run Module, com isso ele é executado na IDE
+
+#Modo Interativo IDE =Testar
+#Script = Criar um script em Python
+
+# = Comentarios em Python
+
+Saida Formatada
+nome = input("Entrada: ")
+print("SAida Formatada {}!".format(nome))
+
+#Resultado
+>>> nome = input("Entrada: ")
+Entrada: 12
+>>> print("SAida Formatada {}!".format(nome))
+SAida Formatada 12!
+
+IDE(Ambiente de desenvolvimento Integrado)
+Ex: Pycharm Comunidade Edition
+
+#Tipos e valores primitivos de entrada e saida
+int = valores inteiros(2)
+float = valores reais(2.1) ou valor de pi
+bool = valores binarios(Verdadeiro ou false)("True ou False") = O python trabalha com a primeira letra em maiuscula o valores booleanos
+str = strings em casos raros de entrada("teste") ou ('teste') ou ('2.2') ou ('')
+
+#Valores de equação
++ = soma
+- = menos
+* = Multiplicação
+/ = Divisão
+** = potencia (5 ** 2 = 25) ou funcao de potencia pow(2,3)
+// = divisão inteira = Divide até achar o resultado inteiro do valor(EX: 5 / 2 = 2.5, porém a divisão é inteira entam 5 / 2 = 2, porque 2 * 2 = 4, este é o valor inteiro mais proximo de 5 sem ser um valor real)
+% = modulo(Resto de divisão) = O resultado de //, as vezes não são inteiros, e possuem restos, como o exemplo acima ele 4 - 5 = 1 este é o resto da divisão, isto é o módulo
+
+Raiz quadrada na guambiara
+EX: 81**(1/2) = potencia por meio
+Raiz cubica na guambiara
+EX: 81**(1/3) = potencia por três
+
+Ordem de precedencia(Regras de matematica)
+Ordem
+
+O python só utiliza chaves para fazer operações, diferente da regra matematica
+
+1° ()
+2° **
+3° * / // % = Quem estiver primeiro livre é efetuado
+4° = + -
+
+O python é muito reconhecido por não possuir limite para calculos como outros programas como java, o limite é literamente o tamanho da memoria interna da maquina
+
+EX: >>> 312 ** 1290
+28802241252499292376633310823717909644467758897676044034060306379000325102652131071402977164157086968466378093412497349251872766711427682102819929539232713947120115309857763783515677378923415714104756422453326586308577262022398278497174114390355869018337623340728968020887220577282210669414219657542379182554671215786475106007415880889516551751354148810443888328037786487346189333128858460770921540490755610647597697149254315048114880074302148439824445888722787814752094369583267538591724062145602483639045343963240978133199660632840318988537699245399388591068164997256559779586049171223058606163791998164213861452353464037296863081160681691419159113091398911948096082262308812083120988052873511924855478825389783157222538798907891680312327865961887774074807859775975590174462512539101479109717185190861156101128435268465255832172966083968023005474391682320816165512519422931190459856652907565859305854762415023120331000853380691445692886069323054686635267813727895429189978085222963439107051106692721806639268010643941851559104481219721284220757007151051910364286896287443611900557242729336539855135688898304588430061658900670892274082211843581311825243259418371898173514164881576254468709880737935771235050586279998855185755469962022088496242828580503779518086497236517680537872704634535403643403898037759473971909694426111259568122091032661313734429592441301682035782454289168393206786108018750155262066683938861930447249930862255490198306152792463972834187631940997905294875253494517773143397285313013874668450618719435983119487000547969791228132911168165989384532695650146667524653500274297895205895258639955449229616084647570911271391808176657627487491715603636880020241245250851855750990467545129651291950783411574068810107827724309099764279102288627735070232216965757228383842510092797730708112707362905481813364063039354694512745270933985330051714420612413713855582085724117019683007274457271910984310522037922388494134417629194664822184352242633064786227725998412292072553047903438852927149858684964804677515347837672631788779463853426384370869461588133784326944800216345381702816831775895100020287083741249464500532856875813394684276027912213178561819103459538425828064205435626597586830940740726256541840601118833010768869180840993039630642499879893856095200985571078677371102795298696093012490692176980733293673290458833357128950148310052094149916009447917592064650229250690418283156759745083434362544672651497286043567817793344874322899784527621120124404924920940417258071911126059874342350606638104195462813803253269484214763768385222919964818237839359195328535410474718967852022493917276594772643925474565509186865004135014331962298759759645045350566809493410830917115199706657144577837228518465523966562452862746775496501652405804766980435643338739147267966382408947942746525698051830358719656749495415722912161727120782091576173443721341079502291731055316993563748387370408826405683880046000245878269452261121165843298771389548883412689260061343838377925737674533226841049368652740707097958305001376739680698922101491178625762310351325748501143055711262257195190995567354696963685688046512381056371850246383197851785695050750336056071320543026565303734971780987668724405163589523908800471858648449024
+
+Input no python, o padrão do python é string
+Para ele aceitar um valor(Numeros) tem que fazer o input ser inteiro
+
+valor = int(input('Agora o valor é inteiro: '))
+
+#Chamadas de valores por parenteses
+#Sintaxe nova(Python 3.0 pra frente)
+print('Valor {}'.format(valor))
+
+#Código de estudo e estrutura em python
+#Entrada de valores inteiros e floats
+valor1 = int(input("Valor1: "))
+valor2 = int(input("Valor2: "))
+valor3 = valor1 + valor2
+print('Valor de saida formatador inteiro {}'.format(valor3))
+#Saida customizada do guanabara desafio
+#python 2 saida
+print('A soma entre',valor1,'mais',valor2,'é igual há: {}'.format(valor3))
+#Saida melhorada
+#python 3 saida
+print('A soma entre {} mais {} é igual há: {}'.format(valor1, valor2, valor3))
+#Para identificar pode fazer isso(Não modifica a saida e nem atrapalha o resultado final)
+#print('A soma entre {0} mais {1} é igual há: {2}'.format(valor1, valor2, valor3))
+#Valores float
+valor4 = float(input("Valor4: "))
+valor5 = float(input("Valor5: "))
+valor6 = valor5 + valor4
+print('Valor de saida formatador float {}'.format(valor6))
+#Como saber a saida do valor
+print(type(valor6))
+#Saida de strinf
+entrada = str(input("Entrada: "))
+print("Saida: {}".format(entrada))
+#Saida boolean
+#Saida boolem, se tem valor a saida e verdadeira, se não tem a saida é falsa
+entrada1 = bool(input("Entrada Booleam: "))
+print("Saida Booleam: {}".format(entrada1))
+
+#Nele temos, saida de valores atual do python 3 e qual o tipo da saida, além do uso do tipo de input float
+
+#Entradas e saida boolen
+True = tem um valor de entrada
+False = não tem valor de entrada
+
+#Confirmando saida numericas em Python
+#Metodo que converte o valor em string em inteiro(variavel.isnumeric) se o valor for verdadeiro(Não funciona com floats)
+
+entrada = input("Entrada: ")
+print(entrada.isnumeric())
+
+#Confirma se o valor de entrada é uma string
+entrada = input("Entrada: ")
+print(entrada.isalpha())
+
+#Entrada alpha-numerica
+entrada = input("Entrada: ")
+print(entrada.isalpha())
+
+#trabalhando com métodos
+entrada = input("Entrada: ")
+print("Saida: {}".format(entrada))
+#Tipo da entrada
+print("Tipo: {}".format(type(entrada)))
+#Entrada é Alpha-numero?
+print("AlphaNumerico: {}".format(entrada.isalnum()))
+#Entrada é alfabetica
+print("Alpha: {}".format(entrada.isalpha()))
+#Estrada é numerica
+print("Numerico: {}".format(entrada.isnumeric()))
+#Entrada é espaço vazio
+print("Espaço: {}".format(entrada.isspace()))
+#Entrada é minuscula
+print("Minusculo: {}".format(entrada.islower()))
+#Maiuscula
+print("Maiusculo: {}".format(entrada.isupper()))
+#Capitalizada(maiusculo e minusculo)
+print("Capitalizada: {}".format(entrada.istitle()))
+
+#Imprimir valores string mais de uma vez
+'oi'*5
+oioioioioi
+
+Alinhamentos em python com caracteres
+entrada = input("Entrada: ")
+print("Valor: {:20}".format(entrada))
+
+Valor: teste                = Imprimiu a entrada com 20 caracteres de tamanho
+
+Alinhando a direita ou esquerda
+entrada = input("Entrada: ")
+print("Valor: {:20}".format(entrada))
+print("Valor: {:>20}".format(entrada))
+print("Valor: {:<20}".format(entrada))
+
+Valor: 1                   = antes de 20 imprima
+Valor:                    1 = depois de 20 imprima
+Valor: 1                   = fique a esquerda de 20 
+
+print("Valor: {:^20}".format(entrada))
+Valor centralizado em 20 espaços
+
+>>> entrada = 1
+>>> print("Valor: {:^20}".format(entrada))
+Valor:          1        
+
+#Quando usamos variaveis
+n1 = float(input("Entrada 1: "))
+n2 = float(input("Entrada 2: "))
+#Imprimir na linha
+#Variaveos so são utilizadas quando a mais de uma chamada dela no codigo, um valor que se repetira mais de uma vez
+print("Valor somatorio: {}".format(n1+n2))
+
+#Arrumando a saida float
+n1 = float(input("Entrada 1: "))
+n2 = float(input("Entrada 2: "))
+print("Valor: {:.2f}".format(n1/n2))
+
+#Mas e se você der dois prints mas não quer quebrar a linha
+#Faz isso que resolve
+
+#Exemplos basicos
+print("Teste",end='')
+print("Testado")
+
+#Exemplo dois
+n1 = float(input("Entrada 1: "))
+n2 = float(input("Entrada 2: "))
+#Controle de casas reais a serem impressas
+print("Valor: {:.2f}".format(n1/n2), end='')
+print("Testado na sida de valor")
+
+Porém o end pode ter um valor no meio para juntar as linhas
+EX: 
+print("Valor: {:.2f}".format(n1/n2), end=' >>> ')
+print("Testado na sida de valor")
+
+
+#E agora e se você quer quebrar a linha
+#É que nem no C use \n pra quebrar
+
+print("Quebre 1\nQuebre 2\nQuebre3")
+
+#Saida
+>>> print("Quebre 1\nQuebre 2\nQuebre3")
+Quebre 1
+Quebre 2
+Quebre3
+
+#Desafio e colocando boas praticas de teste
+entrada = int(input("Entre com um valor: "))
+print("Valor antecessor: {}\nValor Original: {}\nValor sucessor: {}".format(entrada - 1, entrada, entrada + 1))
+
+#Fazer raiz ao quadrado
+entrada = float(input("Entre com um valor: "))
+print("Valor Raiz: {}".format(pow(entrada,(1/2))))
+
+#Você pode utilizar acentos nas variaveis do python
+
+#No python ou quase em todas as linguagens o float é representado com ponto flutuante e não ,
+
+#O simbolo de porcentagem funciona como resto de divisão e não como equação em python
+
+EX:
+preco = float(input("Valor atual: "))
+#Meu jeito de fazer porcento no code(Mania de fazer rapido no C)
+desc = preco - ((preco / 100) * 5)
+print("Valor com desconto de 5%: {:.2f}".format(desc))
+
+#Modulos
