@@ -1,6 +1,7 @@
 #Aulas Guanabara
 
 Guido van Hossuem: Contribuidor da linguagem ABC na década de 80
+Holanda / Guido Van Hossum
 
 Problemas na criação da linguagem do projeto ABC fez com que criasce uma linguagem para resolver o problemas de incompatibilidade da linguagem
 
@@ -695,3 +696,7 @@ cores = {'limpa':'\033[m',
          'cor2':'\033[1;32;42m'}
 
 print('{}print meu nome {}{}{}'.format(cores['limpa'], cores['cor1'], valor, cores['limpa']))
+
+#Deletar valor de uma variavel ou variaveis
+
+del <variavel> = limpa o valor que ela possui

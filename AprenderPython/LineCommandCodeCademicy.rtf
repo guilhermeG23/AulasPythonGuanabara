@@ -1,0 +1,746 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue25;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18960\viewh12900\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs28 \cf0 The command line is a text interface for your computer. it's a program that takes in commands, which it passes on to the computer's operating system to run.\
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+A linha de comando \'e9 uma interface de texto para o seu computador. \'e9 um programa que recebe comandos, que passa para o sistema operacional do computador para executar\
+\
+From the command line, you can navigate through files and folders on your computer, just as you would with finder on Mac OS or Windows Explorer on Windows. The difference is that the command line is fully text-based\
+\
+A partir da linha de comando, voc\'ea pode navegar atrav\'e9s de arquivos e pastas no seu computador, assim como faria com o Finder no Mac OS ou no Windows Explorer no Windows. A diferen\'e7a \'e9 que a linha de comando \'e9 totalmente baseada em texto\
+\
+The advantage of using the command line is this power. you can run programas, write scripts to automate common tasks, and combine simple commands to handle difficult tasks-making it an import programming tool\
+\
+A vantagem de usar a linha de comando \'e9 esse poder. voc\'ea pode executar programas, escrever scripts para automatizar tarefas comuns e combinar comandos simples para lidar com tarefas dif\'edceis - tornando-se uma ferramenta de programa\'e7\'e3o de importa\'e7\'e3o\
+\
+what's going on here\
+\
+Oque esta acontecendo aqui\
+\
+in the terminal, first you see $. this is called a shell prompt. it appears when the terminal is ready to accept a command\
+\
+no terminal, primeiro voc\'ea v\'ea $. Isso \'e9 chamado de prompt do shell. aparece quando o terminal est\'e1 pronto para aceitar um comando\
+\
+When you type ls, the command line looks at the folder you are in, and then "lists" the files and folders inside it. the directories 2014, 2015 and the file hardware.txt are the contents of the current directory\
+\
+Quando voc\'ea escreve ls, a linha de comando analisa a pasta na qual voc\'ea est\'e1, e ent\'e3o "lista" os arquivos e pastas dentro dele. Os diret\'f3rios 2014, 2015 e o arquivo hardware.txt s\'e3o o conte\'fado do diret\'f3rio atual\
+\
+ls = lista o conte\'fado de determinado diret\'f3rio, voce pode fazer no diret\'f3rio atual ou especificar um caminho ao diret\'f3rio \
+\
+ls is an example of a command, a directive to the computer to perform a specific task\
+\
+\'c9 um exemplo de um comando, uma diretiva para o computador para executar uma tarefa espec\'edfica\
+\
+filesystem\
+\
+A filesystem organizes a computer's files and directories into a tree structure:\
+\
+sistema de arquivo\
+\
+Um sistema de arquivos organiza os arquivos e diret\'f3rios de um computador em uma estrutura em \'e1rvore:\
+\
+The first directory in the filesystem is the root directory. is is the parent of all other directory. it is the parent of all other directories and file in the filesystem\
+\
+O primeiro diret\'f3rio no sistema de arquivos \'e9 o diret\'f3rio raiz. \'e9 o pai de todos os outros diret\'f3rios. \'e9 o pai de todos os outros diret\'f3rios e \'e9 arquivado no sistema de arquivos\
+\
+Each parent directory can contain more child directories and files. Here blog/ is the parent of 2014, 2015 and hardware.txt\
+\
+Cada diret\'f3rio pai pode conter mais diret\'f3rios filho e arquivos. Aqui, blog / \'e9 o pai de 2014, 2015 e hardware.txt\
+\
+Each directory can contain more files and child directories. the parent-child relationship ontinues a long as directories and files are nested\
+\
+Cada diret\'f3rio pode conter mais arquivos e diret\'f3rios filho. a rela\'e7\'e3o pai-filho \'e9 longa enquanto diret\'f3rios e arquivos est\'e3o aninhados\
+\
+You're probably already familiar with this tree structure - Mac Finder and Windows Explorer represent the filesystem as trees as well.\
+\
+Voc\'ea provavelmente j\'e1 est\'e1 familiarizado com essa estrutura de \'e1rvore - o Mac Finder eo Windows Explorer representam o sistema de arquivos como \'e1rvores tamb\'e9m.\
+\
+At any point, you can reference the filesystem for this lesson here.\
+\
+Em qualquer ponto, voc\'ea pode fazer refer\'eancia ao sistema de arquivos para esta li\'e7\'e3o aqui.\
+\
+Let's see how to navigate the filesystem from the command line. In the terminal, after the shell prompt, type\
+\
+Vejamos como navegar pelo sistema de arquivos a partir da linha de comando. No terminal, ap\'f3s o prompt do shell, digite:\
+\
+pwd = Mostra o diret\'f3rio atual em que voc\'ea esta\
+\
+pwd stands for "print working directory". it outputs the name of the directory you are currently in, called the working directory\
+\
+Pwd significa "imprimir o diret\'f3rio de trabalho". ele exibe o nome do diret\'f3rio em que voc\'ea est\'e1 atualmente, chamado de diret\'f3rio de trabalho\
+\
+Here the working directory is blog/. in codecademy courses, your working directory is usually inside the home/ccuser/workspace directory\
+\
+Aqui, o diret\'f3rio de trabalho \'e9 blog /. em cursos de codecademy, seu diret\'f3rio de trabalho geralmente est\'e1 dentro do diret\'f3rio home / ccuser / workspace\
+\
+Together with\'a0ls, the\'a0pwd\'a0command is useful to show where you are in the filesystem.\
+\
+Juntamente com, o comando pwd \'e9 \'fatil para mostrar onde voc\'ea est\'e1 no sistema de arquivos.\
+\
+cd stands for "change directory". just as you would click on a folder in windows explorer or finder, cd switches you into the directory you specify. in other words, cd changes the working directory\
+\
+cd significa "diret\'f3rio de mudan\'e7as". Assim como voc\'ea clicaria em uma pasta no Windows Explorer ou finder, o CD alterna no diret\'f3rio que voc\'ea especifica. Em outras palavras, o cd altera o diret\'f3rio de trabalho\
+\
+the directory we change into is 2015. when a file, directory or program is passed into a command, it is called an argument. here the 2015 directory is an argument for the cd command\
+\
+O diret\'f3rio em que mudamos \'e9 2015. Quando um arquivo, diret\'f3rio ou programa \'e9 passado para um comando, ele \'e9 chamado de argumento. aqui o diret\'f3rio 2015 \'e9 um argumento para o comando cd\
+\
+the cd command takes a directory name as an argument, and switches into that directory\
+\
+o comando cd leva um nome de diret\'f3rio como um argumento e alterna para esse diret\'f3rio\
+\
+To navigate directly to a directory, use cd with the directory's path as an argument. Here, cd jan/memory/ command navigates directly to the jan/memory directory.\
+\
+Para navegar diretamente para um diret\'f3rio, use o CD com o caminho do diret\'f3rio como um argumento. Aqui, cd jan / memory / command navega diretamente para o diret\'f3rio jan / memory.\
+\
+To move up one directory, use cd ... Here, cd .. navigates up from jan/memory/ to jan/.\
+\
+Para mover um diret\'f3rio, use cd ... Aqui, cd ... navega de jan / memory / to jan /.\
+\
+The mkdir command stands for "make directory". it takes in a directory name as an argument, and then creates a new directory in the current working directory\
+\
+O comando mkdir significa "make directory". assume um nome de diret\'f3rio como um argumento e, em seguida, cria um novo diret\'f3rio no diret\'f3rio de trabalho atual\
+\
+Here we usamos mkdir to create a new directory named media inside the feb directory \
+\
+Aqui, usamos o mkdir para criar um novo diret\'f3rio chamado m\'eddia dentro do diret\'f3rio feb\
+\
+the touch command creates a new file inside the working directory. it takes in a filename as an argument, and then creates an empty file in the current working directory\
+\
+o comando de toque cria um novo arquivo dentro do diret\'f3rio de trabalho. ele assume um nome de arquivo como um argumento e, em seguida, cria um arquivo vazio no diret\'f3rio de trabalho atual\
+\
+Here we used touch to create a new file named keyboard.txt inside the directory\
+\
+Aqui, usamos o toque para criar um novo arquivo chamado keyboard.txt dentro do diret\'f3rio\
+\
+The commands we've covered so far are commonly used to navigate the filesystem. there are more commands you can use to master the command line, and we'll cover the in the next lessons \
+\
+let's summarize what we've done so far\
+\
+Os comandos que cobrimos at\'e9 agora s\'e3o comumente usados \uc0\u8203 \u8203 para navegar pelo sistema de arquivos. h\'e1 mais comandos que voc\'ea pode usar para dominar a linha de comando e abordaremos as pr\'f3ximas li\'e7\'f5es\
+\
+Vamos resumir o que fizemos at\'e9 agora\
+\
+Congratulations! You've learned five commands commonly used to navigate the file system from the command line. what can we generalize so far?\
+\
+Parab\'e9ns! Voc\'ea aprendeu cinco comandos comumente usados \uc0\u8203 \u8203 para navegar pelo sistema de arquivos a partir da linha de comando. O que podemos generalizar at\'e9 agora?\
+\
+The command line is a text interface for the computer's  operating system. to access the command line, we use the terminal\
+\
+A linha de comando \'e9 uma interface de texto para o sistema operacional do computador. Para acessar a linha de comando, usamos o terminal\
+\
+A filesystem organizes a computer files and directories into a tree structure. it starts with the root directory. Each parent directory can contain more child directories and files\
+\
+Um sistema de arquivos organiza arquivos e diret\'f3rios de um computador em uma estrutura em \'e1rvore. ele come\'e7a com o diret\'f3rio raiz. Cada diret\'f3rio pai pode conter mais diret\'f3rios filho e arquivos\
+\
+From the command line, you can navigate through files and folders on your computer\
+\
+A partir da linha de comando, voc\'ea pode navegar por arquivos e pastas no seu computador\
+\
+pwd outputs the name of the current working directory.\
+\
+O pwd produz o nome do diret\'f3rio de trabalho atual.\
+\
+ls lists all files and directories in the working directory.\
+\
+Ls lista todos os arquivos e diret\'f3rios no diret\'f3rio de trabalho.\
+\
+cd switches you into the directory you specify.\
+\
+O CD altera-o para o diret\'f3rio que voc\'ea especifica.\
+\
+mkdir creates a new directory in the working directory.\
+\
+O mkdir cria um novo diret\'f3rio no diret\'f3rio de trabalho.\
+\
+touch creates a new file inside the working directory.\
+\
+O toque cria um novo arquivo dentro do diret\'f3rio de trabalho.\
+\
+Quiz\
+\
+How would you create a file named text.txt in your current directory?\
+\
+Como voc\'ea criaria um arquivo chamado text.txt no seu diret\'f3rio atual?\
+\
+touch text.txt\
+\
+How would you change to one directory above the current working directory?\
+\
+Como voc\'ea mudaria para um diret\'f3rio acima do diret\'f3rio de trabalho atual?\
+\
+cd ..\
+\
+Which keys on the keyboard allow you to cycle through previous commands?\
+\
+Quais teclas no teclado permitem que voc\'ea percorra os comandos anteriores?\
+\
+The up and down arrow keys\
+\
+If the current working directory is home/, which of the following commands will navigate to the movies/ directory in the tree below?\
+\
+Se o diret\'f3rio de trabalho atual estiver em casa / qual dos seguintes comandos ir\'e1 navegar para o diret\'f3rio de filmes / na \'e1rvore abaixo?\
+\
+home/\
+ media/\
+   movies/\
+   music/\
+\
+cd media/movies\
+\
+How do you print the directory you're currently in?\
+\
+Como voc\'ea imprime o diret\'f3rio no qual voc\'ea est\'e1 atualmente?\
+\
+pwd\
+\
+If the current working directory is home/media/music, which of the following commands will navigate to the home/ folder in the tree below?\
+\
+Se o diret\'f3rio de trabalho atual for home / media / music, qual dos seguintes comandos ir\'e1 navegar para a home / folder na \'e1rvore abaixo?\
+\
+cd ../..\
+\
+Command touch\
+\
+O que o comando touch faz \
+\
+crie um arquivo chamado popular.txt no diret\'f3rio de m\'eddia\
+\
+What keyboard key helps you autocomplete commands and names?\
+\
+Qual tecla do teclado ajuda voc\'ea a completar comandos e nomes?\
+\
+Tab\
+\
+Ls, revisited \
+\
+Ls, revestido\
+\
+So far we've user the command line to navigate the filesystem\
+\
+At\'e9 agora, n\'f3s usamos a linha de comando para navegar pelo sistema de arquivos\
+\
+We can do more with the command line to view directories and files, We can also use the command line to copy, move, and remove files and directories. Let's see how to do this.\
+\
+Podemos fazer mais com a linha de comando para visualizar diret\'f3rios e arquivos. Tamb\'e9m podemos usar a linha de comando para copiar, mover e remover arquivos e diret\'f3rios. Vamos ver como fazer isso.\
+\
+You can reference the filesystem for this lesson here. It is highly recommended for this lesson\
+\
+Voc\'ea pode fazer refer\'eancia ao sistema de arquivos para esta li\'e7\'e3o aqui. \'c9 altamente recomend\'e1vel para esta li\'e7\'e3o\
+\
+The ls command lists all files and directories in the working directory.\
+The -a modifies the behavior of the ls command to also list the files and directories starting with a dot (.). Files started with a dot are hidden, and don't appear when using ls alone.\
+The -a is called an option. Options modify the behavior of commands. Here we used ls -a to display the contents of the working directory in more detail.\
+\
+In addition to -a, the ls command has several more options. Here are three common options:\
+\
+-a - lists all contents, including hidden files and directories\
+-l - lists all contents of a directory in long format\
+-t - order files and directories by the time they were last modified.\
+Let's practice using these options below.\
+\
+O comando ls lista todos os arquivos e diret\'f3rios no diret\'f3rio de trabalho.\
+O -a modifica o comportamento do comando ls para tamb\'e9m listar os arquivos e diret\'f3rios come\'e7ando com um ponto (.). Os arquivos iniciados com um ponto est\'e3o ocultos e n\'e3o aparecem ao usar ls sozinhos.\
+A -a \'e9 chamada de op\'e7\'e3o. As op\'e7\'f5es modificam o comportamento dos comandos. Aqui, usamos ls -a para exibir o conte\'fado do diret\'f3rio de trabalho com mais detalhes.\
+\
+Al\'e9m de -a, o comando ls tem v\'e1rias op\'e7\'f5es mais. Aqui est\'e3o tr\'eas op\'e7\'f5es comuns:\
+\
+-a - lista todos os conte\'fados, incluindo arquivos e diret\'f3rios ocultos\
+-l - lista todos os conte\'fados de um diret\'f3rio em formato longo\
+-t-order arquivos e diret\'f3rios no momento em que foram modificados pela \'faltima vez.\
+Vamos praticar usando estas op\'e7\'f5es abaixo.\
+\
+\
+The -l option lists files and directories as a table. Here there are four rows, with seven columns separated by spaces. Here's what each column means:\
+\
+Access rights. These are actions that are permitted on a file or directory.\
+Number of hard links. This number counts the number of child directories and files. This number includes the parent directory link (..) and current directory link (.).\
+The username of the file's owner. Here the username is cc.\
+The name of the group that owns the file. Here the group name is eng.\
+The size of the file in bytes.\
+The date & time that the file was last modified.\
+The name of the file or directory.\
+\
+A op\'e7\'e3o -l lista arquivos e diret\'f3rios como uma tabela. Aqui h\'e1 quatro linhas, com sete colunas separadas por espa\'e7os. Aqui est\'e1 o que cada coluna significa:\
+\
+Direitos de acesso. Estas s\'e3o a\'e7\'f5es que s\'e3o permitidas em um arquivo ou diret\'f3rio.\
+N\'famero de links r\'edgidos. Este n\'famero conta o n\'famero de diret\'f3rios e arquivos filho. Este n\'famero inclui o link do diret\'f3rio pai (...) e o link do diret\'f3rio atual (.).\
+O nome de usu\'e1rio do propriet\'e1rio do arquivo. Aqui o nome de usu\'e1rio \'e9 cc.\
+O nome do grupo que possui o arquivo. Aqui o nome do grupo \'e9 eng.\
+O tamanho do arquivo em bytes.\
+A data e hora em que o arquivo foi modificado pela \'faltima vez.\
+O nome do arquivo ou diret\'f3rio.\
+\
+The -t option orders files and directories by the time they were last modified.\
+\
+A op\'e7\'e3o -t ordena arquivos e diret\'f3rios no momento em que foram modificados pela \'faltima vez.\
+\
+In addition to using each option separately, like ls -a or ls -l, multiple options can be used together, like ls -alt\
+\
+Al\'e9m de usar cada op\'e7\'e3o separadamente, como ls -a ou ls -l, v\'e1rias op\'e7\'f5es podem ser usadas em conjunto, como ls -alt\
+\
+Here, ls -alt lists all contents, including hidden files and directories, in long format, ordered by the date and time they were last modified\
+\
+Aqui, ls -alt lista todos os conte\'fados, incluindo arquivos e diret\'f3rios ocultos, em formato longo, ordenados pela data e hora em que foram modificados pela \'faltima vez\
+\
+The cp command copies files or directories. Here, we copy the contents of frida.txt into lincoln.txt.\
+\
+O comando cp copia arquivos ou diret\'f3rios. Aqui, copiamos o conte\'fado do frida.txt para lincoln.txt.\
+\
+Copiando v\'e1rios arquivos de uma \'fanica vez\
+\
+cp diretorios/teste.txt diretorios/teste1.txt pastel/maligno\
+\
+Desta forma os dois arquivo txt foram copiados para a pasta maligno do diret\'f3rio pastel \
+\
+To copy a file into a directory, use cp with the source file as the first argument and the destination directory as the second argument. Here, we copy the file teste and place it in the teste1 directory\
+\
+Para copiar um arquivo para um diret\'f3rio, use cp com o arquivo de origem como o primeiro argumento e o diret\'f3rio de destino como o segundo argumento. Aqui, copiamos o teste de arquivo e colocamos no diret\'f3rio teste1\
+\
+To copy multiple files into a directory, use cp with a list of source files as the arguments, and the destination directory as the last argument. here, we copy the files teste and teste1 into the teste2 directory\
+\
+Para copiar v\'e1rios arquivos para um diret\'f3rio, use cp com uma lista de arquivos de origem como argumentos e o diret\'f3rio de destino como o \'faltimo argumento. aqui, copiamos os arquivos teste e teste1 para o diret\'f3rio teste2\
+\
+wildcards\
+\
+Curingas\
+\
+In addition to using filename as arguments, we can use special characters like * to select group of files, these special characters are called wildcards. the * selects all files in the working directory, so here we use cp to copy all files into the satire directory\
+\
+Al\'e9m de usar o nome do arquivo como argumentos, podemos usar caracteres especiais como * para selecionar o grupo de arquivos, esses caracteres especiais s\'e3o chamados curingas. o * seleciona todos os arquivos no diret\'f3rio de trabalho, ent\'e3o aqui usamos cp para copiar todos os arquivos no diret\'f3rio s\'e1tira\
+\
+Here, M*.txt select all files in the working directory starting with "m" and ending with ".txt" and copies the to scifi.\
+\
+Aqui, M * .txt selecione todos os arquivos no diret\'f3rio de trabalho come\'e7ando com "m" e terminando com ".txt" e copiando para o scifi.\
+\
+MV\
+\
+the mv command move files. it's similar cp in its usage\
+o comando mv move arquivos. \'c9 Cp similar no seu uso\
+\
+to move a file into a directory, use mv with the source file as the first argument and the destination directory as the second argument. here we move superman.txt into superhero/\
+\
+para mover um arquivo para um diret\'f3rio, use mv com o arquivo de origem como o primeiro argumento e o diret\'f3rio de destino como o segundo argumento. aqui movemos o superman.txt para o super-her\'f3i /\
+\
+te rename a file, use mv with the old file as the first argument and the new file as the second argument. by moving teste into test1, we rename the file as test1\
+\
+renomeie um arquivo, use mv com o arquivo antigo como o primeiro argumento e o novo arquivo como o segundo argumento. movendo teste para teste1, renomeamos o arquivo como teste1\
+\
+rm\
+\
+the rm command deletes files and directories. Here we remove the file waterboy.txt from the filesystem.\
+\
+O comando rm exclui arquivos e diret\'f3rios. Aqui, removemos o arquivo waterboy.txt do sistema de arquivos.\
+\
+the -r is an option that modifies the behavior of the rm command. the -r stands for "recursive", and it's used to delete a directory and all of this child directories\
+\
+o -r \'e9 uma op\'e7\'e3o que modifica o comportamento do comando rm. o -r significa "recursivo", e \'e9 usado para excluir um diret\'f3rio e todos esses diret\'f3rios filho\
+\
+Be careful when you use rm! it deletes files and directories permanently. these isn't an undelete command, so once you delete a file or directory with rm, it's gone\
+\
+Tenha cuidado ao usar rm! ele exclui arquivos e diret\'f3rios permanentemente. Este n\'e3o \'e9 um comando de desaprova\'e7\'e3o, ent\'e3o, uma vez que voc\'ea exclua um arquivo ou diret\'f3rio com o rm, ele se foi\
+\
+Generalizations\
+Congratulations! You learned how to use the command line to view and manipulate the filesystem. What can we generalize so far?\
+\
+Options modify the behavior of commands:\
+ls -a lists all contents of a directory, including hidden files and directories\
+ls -l lists all contents in long format\
+ls -t orders files and directories by the time they were last modified\
+Multiple options can be used together, like ls -alt\
+From the command line, you can also copy, move, and remove files and directories:\
+cp copies files\
+mv moves and renames files\
+rm removes files\
+rm -r removes directories\
+Wildcards are useful for selecting groups of files and directories\
+\
+Generaliza\'e7\'f5es\
+Parab\'e9ns! Voc\'ea aprendeu a usar a linha de comando para visualizar e manipular o sistema de arquivos. O que podemos generalizar at\'e9 agora?\
+\
+As op\'e7\'f5es modificam o comportamento dos comandos:\
+ls -a lista todos os conte\'fados de um diret\'f3rio, incluindo arquivos ocultos e diret\'f3rios\
+ls -l lista todos os conte\'fados em formato longo\
+l-ordena arquivos e diret\'f3rios no momento em que foram modificados pela \'faltima vez\
+V\'e1rias op\'e7\'f5es podem ser usadas juntas, como ls -alt\
+Na linha de comando, voc\'ea tamb\'e9m pode copiar, mover e remover arquivos e diret\'f3rios:\
+cp copia arquivos\
+mv move e renomeia arquivos\
+rm remove arquivos\
+rm -r remove diret\'f3rios\
+Os curingas s\'e3o \'fateis para selecionar grupos de arquivos e diret\'f3rios\
+\
+\
+\
+#Adicionar os arquivos de ontem\
+\
+\
+\
+\
+\
+\
+\
+\
+nano\
+Nice. You just edited a file in the nano text editor. How does it work?\
+\
+$ nano hello.txt\
+nano is a command line text editor. It works just like a desktop text editor like TextEdit or Notepad, except that it is accessible from the command line and only accepts keyboard input.\
+\
+The command nano hello.txt opens a new text file named hello.txt in the nano text editor.\
+"Hello, I am nano" is a text string entered in nano through the cursor.\
+The menu of keyboard commands at the bottom of the window allow us to save changes to hello.txt and exit nano. The ^ stands for the Ctrl key.\
+\
+Ctrl + O saves a file. 'O' stands for output.\
+\
+Ctrl + X exits the nano program. 'X' stands for exit.\
+Ctrl + G opens a help menu.\
+clear clears the terminal window, moving the command prompt to the top of the screen.\
+In this lesson, we'll use nano to implement changes to the environment. You can learn more about nano here.\
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+nano\
+Agrad\'e1vel. Voc\'ea editou apenas um arquivo no editor de texto nano. Como funciona?\
+\
+$ nano hello.txt\
+nano \'e9 um editor de texto de linha de comando. Funciona como um editor de texto da \'e1rea de trabalho como TextEdit ou Notepad, exceto que ele \'e9 acess\'edvel a partir da linha de comando e s\'f3 aceita a entrada do teclado.\
+\
+O comando nano hello.txt abre um novo arquivo de texto chamado hello.txt no editor de texto nano.\
+"Ol\'e1, eu sou nano" \'e9 uma string de texto inserida em nano atrav\'e9s do cursor.\
+O menu dos comandos do teclado na parte inferior da janela nos permite salvar as altera\'e7\'f5es no hello.txt e sair do nano. O ^ representa a chave Ctrl.\
+\
+Ctrl + O salva um arquivo. 'O' significa sa\'edda.\
+\
+Ctrl + X sai do nano programa. 'X' significa sa\'edda.\
+Ctrl + G abre um menu de ajuda.\
+clear limpa a janela do terminal, movendo o prompt de comando para o topo da tela.\
+Nesta li\'e7\'e3o, usaremos nano para implementar mudan\'e7as no ambiente. Voc\'ea pode aprender mais sobre nano aqui.\
+\
+Bash Profile\
+You created a file in nano called ~/.bash_profile and added a greeting. How does this work?\
+\
+$ nano ~/.bash_profile\
+~/.bash_profile is the name of file used to store environment settings. It is commonly called the "bash profile". When a session starts, it will load the contents of the bash profile before executing commands.\
+\
+The ~ represents the user's home directory.\
+The . indicates a hidden file.\
+The name ~/.bash_profile is important, since this is how the command line recognizes the bash profile.\
+The command nano ~/.bash_profile opens up ~/.bash_profile in nano.\
+The text echo "Welcome, Jane Doe" creates a greeting in the bash profile, which is saved. It tells the command line to echo the string "Welcome, Jane Doe" when a terminal session begins.\
+The command source ~/.bash_profile activates the changes in ~/.bash_profile for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.\
+\
+Bash Profile\
+Voc\'ea criou um arquivo em nano chamado ~ / .bash_profile e adicionou uma sauda\'e7\'e3o. Como \'e9 que isso funciona?\
+\
+$ nano ~ / .bash_profile\
+~ / .bash_profile \'e9 o nome do arquivo usado para armazenar configura\'e7\'f5es de ambiente. \'c9 geralmente chamado de "perfil bash". Quando uma sess\'e3o \'e9 iniciada, ele ir\'e1 carregar o conte\'fado do perfil bash antes de executar comandos.\
+\
+O ~ representa o diret\'f3rio inicial do usu\'e1rio.\
+O . indica um arquivo oculto.\
+O nome ~ / .bash_profile \'e9 importante, pois \'e9 assim que a linha de comando reconhece o perfil bash.\
+O comando nano ~ / .bash_profile abre ~ / .bash_profile em nano.\
+O eco do texto "Bem-vindo, Jane Doe" cria uma sauda\'e7\'e3o no perfil bash, que \'e9 salvo. Ele diz \'e0 linha de comando que fa\'e7a eco da string "Welcome, Jane Doe" quando uma sess\'e3o do terminal come\'e7a.\
+A fonte de comando ~ / .bash_profile ativa as mudan\'e7as em ~ / .bash_profile para a sess\'e3o atual. Em vez de fechar o terminal e precisar iniciar uma nova sess\'e3o, a fonte torna as mudan\'e7as dispon\'edveis imediatamente na sess\'e3o em que estamos.\
+\
+In the command line, use the source command to activate the changes in the current session.\
+\
+Na linha de comando, use o comando de origem para ativar as mudan\'e7as na sess\'e3o atual.\
+\
+source ~/.bash_profile\
+\
+Aliases I\
+What happens when you store this alias in ~/.bash_profile?\
+\
+alias pd="pwd"\
+The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands.\
+\
+Here alias pd="pwd" creates the alias pd for the pwd command, which is then saved in the bash profile. Each time you enter pd, the output will be the same as the pwd command.\
+The command source ~/.bash_profile makes the alias pd available in the current session.\
+Each time we open up the terminal, we can use the pd alias.\
+\
+Alias \uc0\u8203 \u8203 I\
+O que acontece quando voc\'ea armazena esse alias em ~ / .bash_profile?\
+\
+alias pd = "pwd"\
+O comando alias permite que voc\'ea crie atalhos de teclado, ou alias, para comandos comumente usados.\
+\
+Aqui alias pd = "pwd" cria o pseud\'f3nimo alias para o comando pwd, que \'e9 salvo no perfil bash. Cada vez que voc\'ea inserir pd, a sa\'edda ser\'e1 igual ao comando pwd.\
+A fonte de comando ~ / .bash_profile torna a alias pd dispon\'edvel na sess\'e3o atual.\
+Cada vez que abrimos o terminal, podemos usar o alias pd.\
+\
+Aliases II\
+What happens when you store the following aliases in ~/.bash_profile?\
+\
+alias hy="history"\
+hy is set as alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing hy, the command line outputs a history of commands that were entered in the current session.\
+\
+alias ll="ls -la"\
+ll is set as an alias for ls -la and made available in the current session through source. By typing ll, the command line now outputs all contents and directories in long format, including all hidden files.\
+\
+Alias \uc0\u8203 \u8203 II\
+O que acontece quando voc\'ea armazena os seguintes alias em ~ / .bash_profile?\
+\
+alias hy = "hist\'f3ria"\
+hy \'e9 definido como alias para o comando de hist\'f3rico no perfil bash. O alias \'e9 ent\'e3o disponibilizado na sess\'e3o atual atrav\'e9s da fonte. Ao digitar hy, a linha de comando exibe um hist\'f3rico de comandos que foram inseridos na sess\'e3o atual.\
+\
+alias ll = "ls -la"\
+ll \'e9 definido como um alias para ls -la e disponibilizado na sess\'e3o atual atrav\'e9s da fonte. Ao digitar ll, a linha de comando agora exibe todos os conte\'fados e diret\'f3rios em formato longo, incluindo todos os arquivos ocultos.\
+\
+Now that you are familiar with configuring greetings and aliases, let's move on to setting environment variables.\
+Open ~/.bash_profile in nano.\
+\
+2.In the bash profile, beneath the aliases, on a new line, type\
+export USER="Jane Doe"\
+Feel free to use your own name.\
+Save the file.\
+Press Enter to write the filename.\
+Exit nano.\
+Finally, clear the terminal.\
+\
+3. In the command line, use source to activate the changes in the bash profile for the current session.\
+\
+4.Type\
+echo $USER\
+This should return the value of the variable that you set.\
+(Tip: If you are unable to type $, you can find help here.)\
+\
+Agora que voc\'ea est\'e1 familiarizado com a configura\'e7\'e3o de sauda\'e7\'f5es e alias, vamos passar para configurar vari\'e1veis \uc0\u8203 \u8203 de ambiente.\
+Abra ~ / .bash_profile em nano.\
+\
+2.No perfil bash, abaixo dos alias, em uma nova linha, digite\
+Exporte USER = "Jane Doe"\
+Sinta-se livre para usar seu pr\'f3prio nome.\
+Salve o arquivo.\
+Pressione Enter para escrever o nome do arquivo.\
+Sair nano.\
+Finalmente, limpe o terminal.\
+\
+3.Na linha de comando, use a fonte para ativar as altera\'e7\'f5es no perfil bash para a sess\'e3o atual.\
+\
+4.Tipo\
+echo $ USER\
+Isso deve retornar o valor da vari\'e1vel que voc\'ea definiu.\
+\
+(Dica: se voc\'ea n\'e3o conseguir digitar $, pode encontrar ajuda aqui.)\
+\
+Environment Variables\
+What happens when you store this in ~/.bash_profile?\
+\
+export USER="Jane Doe"\
+environment variables are variables that can be used across commands and programs and hold information about the environment.\
+\
+The line USER="Jane Doe" sets the environment variable USER to a name "Jane Doe". Usually the USER variable is set to the name of the computer's owner.\
+The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs.\
+At the command line, the command echo $USER returns the value of the variable. Note that $ is always used when returning a variable's value. Here, the command echo $USER returns the name set for the variable.\
+\
+vari\'e1veis \uc0\u8203 \u8203 ambientais\
+O que acontece quando voc\'ea armazena isso em ~ / .bash_profile?\
+\
+Exporte USER = "Jane Doe"\
+As vari\'e1veis \uc0\u8203 \u8203 de ambiente s\'e3o vari\'e1veis \u8203 \u8203 que podem ser usadas em comandos e programas e manter informa\'e7\'f5es sobre o meio ambiente.\
+\
+A linha USER = "Jane Doe" define a vari\'e1vel de ambiente USU\'c1RIO como um nome "Jane Doe". Normalmente, a vari\'e1vel USER \'e9 definida como o nome do propriet\'e1rio do computador.\
+A exporta\'e7\'e3o de linha faz com que a vari\'e1vel esteja dispon\'edvel para todas as sess\'f5es filho iniciadas a partir da sess\'e3o em que voc\'ea est\'e1. Esta \'e9 uma maneira de fazer a vari\'e1vel persistir em todos os programas.\
+Na linha de comando, o comando echo $ USER retorna o valor da vari\'e1vel. Observe que $ sempre \'e9 usado ao retornar o valor de uma vari\'e1vel. Aqui, o comando echo $ USER retorna o nome definido para a vari\'e1vel.\
+\
+1.Let's learn a few more environment variables, starting with the variable for the command prompt.\
+Open ~/.bash_profile in nano.\
+\
+2.On a new line, beneath the last entry, type\
+export PS1=">> "\
+Save the file.\
+Press Enter to write the filename.\
+Exit nano\
+Finally, clear the terminal window.\
+\
+3.In the command line, use source to activate the changes in the bash profile for the current shell session.\
+\
+4.Let's try out the new command prompt. In the terminal type\
+echo "hello"\
+\
+5.Now type\
+ls -alt\
+Did you notice that the prompt has changed?\
+\
+Vamos aprender mais algumas vari\'e1veis \uc0\u8203 \u8203 de ambiente, come\'e7ando com a vari\'e1vel para o prompt de comando.\
+Abra ~ / .bash_profile em nano.\
+\
+2.Em uma nova linha, abaixo da \'faltima entrada, digite\
+exportar PS1 = ">>"\
+Salve o arquivo.\
+Pressione Enter para escrever o nome do arquivo.\
+Sair nano\
+Finalmente, limpe a janela do terminal.\
+\
+3.Na linha de comando, use a fonte para ativar as altera\'e7\'f5es no perfil bash para a sess\'e3o de shell atual.\
+\
+4.Vamos tentar o novo prompt de comando. No tipo de terminal\
+Echo "ol\'e1"\
+\
+5.Agora digite\
+ls -alt\
+Voc\'ea notou que o prompt mudou?\
+\
+PS1\
+What happens when this is stored in ~/.bash_profile?\
+\
+export PS1=">> "\
+PS1 is a variable that defines the makeup and style of the command prompt.\
+\
+export PS1=">> " sets the command prompt variable and exports the variable. Here we change the default command prompt from $ to >>.\
+After using the source command, the command line displays the new command prompt.\
+\
+PS1\
+O que acontece quando isso \'e9 armazenado em ~ / .bash_profile?\
+\
+exportar PS1 = ">>"\
+PS1 \'e9 uma vari\'e1vel que define a maquiagem e o estilo do prompt de comando.\
+\
+exportar PS1 = ">>" define a vari\'e1vel do prompt de comando e exporta a vari\'e1vel. Aqui mudamos o prompt de comando padr\'e3o de $ para >>.\
+Depois de usar o comando de origem, a linha de comando exibe o novo prompt de comando.\
+\
+Let's learn about two more environment variables.\
+In the command line, type\
+echo $HOME\
+This returns the value of the HOME variable.\
+\
+Vamos aprender sobre mais duas vari\'e1veis \uc0\u8203 \u8203 de ambiente.\
+Na linha de comando, digite\
+echo $ HOME\
+Isso retorna o valor da vari\'e1vel HOME.\
+\
+HOME\
+What happens when you type this command?\
+\
+$ echo $HOME\
+The HOME variable is an environment variable that displays the path of the home directory. Here by typing echo $HOME, the terminal displays the path /home/ccuser as output.\
+\
+You can customize the HOME variable if needed, but in most cases this is not necessary.\
+\
+CASA\
+O que acontece quando voc\'ea digita este comando?\
+\
+$ echo $ HOME\
+A vari\'e1vel HOME \'e9 uma vari\'e1vel de ambiente que exibe o caminho do diret\'f3rio inicial. Aqui, digitando echo $ HOME, o terminal exibe o caminho / home / ccuser como sa\'edda.\
+\
+Voc\'ea pode personalizar a vari\'e1vel HOME, se necess\'e1rio, mas, na maioria dos casos, isso n\'e3o \'e9 necess\'e1rio.\
+\
+PATH\
+What happens when you type this command?\
+\
+$ echo $PATH\
+\
+/home/ccuser/.gem/ruby/2.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin\
+PATH is an environment variable that stores a list of directories separated by a colon. Looking carefully, echo $PATH lists the following directories:\
+\
+/home/ccuser/.gem/ruby/2.0.0/bin\
+/usr/local/sbin\
+/usr/local/bin\
+/usr/bin\
+/usr/sbin\
+/sbin\
+/bin\
+Each directory contains scripts for the command line to execute. The PATH variable simply lists which directories contain scripts.\
+\
+For example, many commands we've learned are scripts stored in the /bin directory.\
+\
+/bin/pwd\
+This is the script that is executed when you type the pwd command.\
+\
+/bin/ls\
+This is the script that is executed when you type the ls command.\
+\
+In advanced cases, you can customize the PATH variable when adding scripts of your own.\
+\
+CAMINHO\
+O que acontece quando voc\'ea digita este comando?\
+\
+$ echo $ PATH\
+\
+/home/ccuser/.gem/ruby/2.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin\
+PATH \'e9 uma vari\'e1vel de ambiente que armazena uma lista de diret\'f3rios separados por dois pontos. Olhando com cuidado, echo $ PATH lista os seguintes diret\'f3rios:\
+\
+/home/ccuser/.gem/ruby/2.0.0/bin\
+/ usr / local / sbin\
+/ usr / local / bin\
+/ usr / bin\
+/ usr / sbin\
+/ sbin\
+/ bin\
+Cada diret\'f3rio cont\'e9m scripts para a linha de comando a ser executada. A vari\'e1vel PATH simplesmente lista quais diret\'f3rios cont\'eam scripts.\
+\
+Por exemplo, muitos comandos que aprendemos s\'e3o scripts armazenados no diret\'f3rio / bin.\
+\
+/ bin / pwd\
+Este \'e9 o script que \'e9 executado quando voc\'ea digita o comando pwd.\
+\
+/ bin / ls\
+Este \'e9 o script que \'e9 executado quando voc\'ea digita o comando ls.\
+\
+Em casos avan\'e7ados, voc\'ea pode personalizar a vari\'e1vel PATH ao adicionar scripts pr\'f3prios.\
+\
+env\
+What happens when you type this command?\
+\
+env\
+The env command stands for "environment", and returns a list of the environment variables for the current user. Here, the env command returns a number of variables, including PATH, PWD, PS1, and HOME.\
+\
+env | grep PATH\
+env | grep PATH is a command that displays the value of a single environment variable. Here the standard output of env is "piped" to the grep command. grep searches for the value of the variable PATH and outputs it to the terminal.\
+\
+env\
+O que acontece quando voc\'ea digita este comando?\
+\
+env\
+O comando env significa "ambiente" e retorna uma lista das vari\'e1veis \uc0\u8203 \u8203 de ambiente para o usu\'e1rio atual. Aqui, o comando env retorna uma s\'e9rie de vari\'e1veis, incluindo PATH, PWD, PS1 e HOME.\
+\
+env | GREP PATH\
+env | grep PATH \'e9 um comando que exibe o valor de uma \'fanica vari\'e1vel de ambiente. Aqui, a sa\'edda padr\'e3o do env \'e9 "canalizada" para o comando grep. grep procura o valor da vari\'e1vel PATH e a entrega para o terminal.\
+\
+Generalizations\
+Congratulations! You learned to use the bash profile to configure the environment. What can we generalize so far?\
+\
+The environment refers to the preferences and settings of the current user.\
+The nano editor is a command line text editor used to configure the environment.\
+\
+~/.bash_profile is where environment settings are stored. You can edit this file with nano.\
+\
+environment variables are variables that can be used across commands and programs and hold information about the environment.\
+\
+export VARIABLE="Value" sets and exports an environment variable.\
+USER is the name of the current user.\
+PS1 is the command prompt.\
+HOME is the home directory. It is usually not customized.\
+PATH returns a colon separated list of file paths. It is customized in advanced cases.\
+env returns a list of environment variables.\
+\
+Generaliza\'e7\'f5es\
+Parab\'e9ns! Voc\'ea aprendeu a usar o perfil bash para configurar o ambiente. O que podemos generalizar at\'e9 agora?\
+\
+O ambiente refere-se \'e0s prefer\'eancias e configura\'e7\'f5es do usu\'e1rio atual.\
+O nano editor \'e9 um editor de texto de linha de comando usado para configurar o ambiente.\
+\
+~ / .bash_profile \'e9 onde as configura\'e7\'f5es do ambiente s\'e3o armazenadas. Voc\'ea pode editar este arquivo com nano.\
+\
+As vari\'e1veis \uc0\u8203 \u8203 de ambiente s\'e3o vari\'e1veis \u8203 \u8203 que podem ser usadas em comandos e programas e manter informa\'e7\'f5es sobre o meio ambiente.\
+\
+exportar VARIABLE = "Valor" define e exporta uma vari\'e1vel de ambiente.\
+O USU\'c1RIO \'e9 o nome do usu\'e1rio atual.\
+PS1 \'e9 o prompt de comando.\
+HOME \'e9 o diret\'f3rio inicial. Geralmente n\'e3o \'e9 personalizado.\
+PATH retorna uma lista separada de dois caminhos de arquivo separados por dois pontos. \'c9 personalizado em casos avan\'e7ados.\
+Env retorna uma lista de vari\'e1veis \uc0\u8203 \u8203 de ambiente.
+\f1\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+}

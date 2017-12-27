@@ -1,0 +1,5 @@
+titulo = str(input('Titulo do arquivo: '))
+texto = str(input('Digite sua mensagem: '))
+arquivo = open('{}.txt'.format(titulo), 'w')
+arquivo.write(texto)
+arquivo.close()
