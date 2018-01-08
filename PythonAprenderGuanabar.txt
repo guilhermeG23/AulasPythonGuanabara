@@ -701,4 +701,17 @@ print('{}print meu nome {}{}{}'.format(cores['limpa'], cores['cor1'], valor, cor
 
 del <variavel> = limpa o valor que ela possui
 
-<variavel>.clear() = Limpa o conteudo da lista
+<variavel>.clear() = Limpa o conteudo da lista, so funciona com listas
+
+#Usando time com modulo
+
+from datetime import datetime
+now = datetime.now()
+print now.year
+print now.month
+print now.day
+print now.hour
+print now.minute
+print now.second
+
+#Ajuda e muito no desespero
