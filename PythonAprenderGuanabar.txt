@@ -381,6 +381,17 @@ Use o comandos:
 #tudo
 import (biblioteca = adiciona toda uma biblioteca e suas funcionalidades)
 
+#Importar toda a biblioteca e nomeala de outra forma
+
+import os as teste
+
+Neste caso quando oce for usar uma função da biblioteca os voce usa teste no lugar:
+EX:
+os.system
+
+Para:
+teste.system
+
 #Parte
 #Importar so uma parte da Biblioteca
 from (biblioteca) import (parte que você quer da biblioteca)
@@ -714,4 +725,89 @@ print now.hour
 print now.minute
 print now.second
 
-#Ajuda e muito no desespero
+#Modulo Tkinter
+
+Modulo padrão grafico do Python, onde significa Tk Interface, tk é o nome da biblioteca e interface é o grafico
+#A tk interface é multiplataforme e foi desenvolvida com intuito nisso, para uso comercial ela prorpia não é encorajada, ja que sua biblioteca é pequena e com poucos recursos comparado a outros modelos comerciais
+
+widget = componente grafico da interface
+container = é um widget que conte outros widgets
+window = janela que contem componentes
+top-leve window = janela independente
+frame = unidade basica de organização de layout's
+child-parent = pai e filhos, widget é filho de um container, onde todo o componente é filho de uma container
+
+#Importando todo o tkinter
+
+#Python 3 pra cima(Minusculo)
+import tkinter
+
+#Python 2 pra baixo(Maiusculo)
+import Tkinter
+
+#Caso voce queira testar use isso:
+
+#Python 3.6.3
+import tkinter
+aba = tkinter.Tk()
+aba.mainloop()
+
+#O python cria uma janela de tamanho comum com funcoes de maximizar, minimizar e fechar, ainda possuindo o controle livre de sua estrutura
+
+Depois de criado isso a janela fica em loop infinito esperando alterações na propria, no caso tudo abaixo do mainloop não pode ser executado antes de ser finalizado
+#Se imprimir a janela acima, e tiver um comando a abaixo do main loop, o proprio não sera executado ate o fim da funcao mainloop
+
+#EXEMPLO EXPLICATIVO
+-------------------------------------------------------------------------------------------
+#Chamando toda a biblioteca e nomeando de outra forma
+import tkinter as tk
+
+#Chamando a funcao principal juntoda biblioteca
+aba = tk.Tk()
+#Criando um title
+aba.title('Aba principal')
+#BackGround
+aba['bg'] = 'green'
+#OU
+#aba['background'] = 'green'
+#Definir o tamanho da janela
+#LxA+E+T
+#COmo funciona = 400 de largura, 300 de altura
+#100 de distancia da esquerda da tela e 100 de distancia do topo da janela
+#Os dois parametros de 100 e 100 podem ser omitidos da impressão, pois não são obrigatorios na chamada
+#O mesmo vale se a altura e a largura não forem chamadas, e sim a distancia das bordas da tela
+#EX: Completo
+aba.geometry('400x300+100+100')
+#LxA
+#aba.geometry('400x300')
+#DE+DT
+#aba.geometry('+100+100')
+#Chamando a funcao principal
+aba.mainloop()
+-------------------------------------------------------------------------------------------
+
+Os 3 pilares
+
+#regras basicas de uma organizaçãod e interface grafica
+
+#Gerenciador de leiaute = crontole e organizaçãoda interface grafica para futuras melhorias e suporte
+#Widget = componentes de telas
+#Eventos = Evento de tela, funçoes entre outras, programar eventos
+
+#3 gerenciadores de Layouts
+
+place = o mais simples e menos utilizado, facil de aprender, mas é muito desaconselhavel usar, pois qualquer alteração pode levar a ajustar todos os outros componentes do container
+Coordenadas: X, Y
+
+Pack = Empacota e imprimir na horizontal e vertical, o mais velho, porem menos intuitivo e com limitações, uso pouco intuitivo
+
+grid = defini o item com uma numereção de celula e coluna
+
+#Place:
+Plano cartesiano = usa 4 quadrantes, sendo o eixo x e y positivo
+
+#Propriedades
+
+Side: Vincula uma extremidade a um componente
+Anchor: Vincula um sentido a um componente
+Fill = Preencher todo um lado tanto horizontal quanto vertical
